@@ -1,7 +1,10 @@
+import { Button } from "../components/Button"
 
 const ButtonComponent = () => {
   return (
-    <div>ButtonComponent</div>
+    <div>
+        <Button>Component</Button>
+    </div>
   )
 }
 
