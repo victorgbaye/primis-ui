@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Overview from './pages/Overview';
 import ButtonComponent from './pages/ButtonComponent';
 import IconComponent from './pages/IconComponent';
+import Home from './pages/Home';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/components" element={<div>Components Layout</div>}>
+          <Route path='/' element={<Home/>}/>
+          <Route path="/components">
             <Route index element={<Overview />} />
             <Route path="overview" element={<Overview />} />
             <Route path="button" element={<ButtonComponent />} />
