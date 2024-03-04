@@ -2,8 +2,10 @@ import Tabs from "../components/Tabs"
 
 const TabsComponent = () => {
     const tabsData = [
-        { id: 1, label: 'Availability', content: <p>Tab 1</p> },
-        { id: 2, label: 'Profile', content: <p>Tab2</p> },
+        { id: 1, label: 'Tab 1', content: <p>Tab 1 content</p> },
+        { id: 2, label: 'Tab 2', content: <p>Tab 2 content</p> },
+        { id: 3, label: 'Tab 3', content: <p>Tab 3 content</p> },
+
       ];
   return (
     <div>

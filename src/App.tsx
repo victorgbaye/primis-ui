@@ -29,8 +29,8 @@ function App() {
             <Route path="select" element={<SelectComponent />} />
             <Route path="switch" element={<SwitchComponent />} />
             <Route path="tabs" element={<TabsComponent />} />
-            <Route path="input" element={<InputComponent />} />
             <Route path="skeleton" element={<SkeletonComponent />} />
+            <Route path="input" element={<InputComponent />} />
 
           </Route>
         </Routes>
