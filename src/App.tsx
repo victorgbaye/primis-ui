@@ -7,6 +7,9 @@ import ModalComponent from './pages/ModalComponent';
 import CheckboxComponent from './pages/CheckboxComponent';
 import { SelectComponent } from './pages/SelectComponent';
 import SwitchComponent from './pages/SwitchComponent';
+import TabsComponent from './pages/TabsComponent';
+import InputComponent from './pages/InputComponent';
+import SkeletonComponent from './pages/SkeletonComponent';
 
 
 function App() {
@@ -25,6 +28,9 @@ function App() {
             <Route path="checkbox" element={<CheckboxComponent />} />
             <Route path="select" element={<SelectComponent />} />
             <Route path="switch" element={<SwitchComponent />} />
+            <Route path="tabs" element={<TabsComponent />} />
+            <Route path="input" element={<InputComponent />} />
+            <Route path="skeleton" element={<SkeletonComponent />} />
 
           </Route>
         </Routes>
