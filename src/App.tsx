@@ -11,7 +11,6 @@ import TabsComponent from './pages/TabsComponent';
 import InputComponent from './pages/InputComponent';
 import SkeletonComponent from './pages/SkeletonComponent';
 
-
 function App() {
 
   return (

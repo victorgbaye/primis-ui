@@ -30,8 +30,8 @@ const Sidebar = () => {
               <LinkItem key={path}>
                 <StyledNavLink
                   to={path}
-                  className={({ isActive }) => (isActive ? 'active' : '')}
-                >
+                  className={({ isActive }: { isActive: boolean }) => (isActive ? 'active' : '')}
+                  >
                   {text}
                 </StyledNavLink>
               </LinkItem>

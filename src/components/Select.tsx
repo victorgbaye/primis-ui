@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { OptionItem, OptionList, SelectButton, StyledSelect } from '../assets/wrappers/Select.styles';
 
 interface Option {
