@@ -28,13 +28,58 @@ const CopyButton = styled.button`
 
 
 const StyledLiveEditor = styled(LiveEditor)`
-  font-size: 16px;
-  background-color: white; // Light background
-  color: black; // Dark text color
-  border-radius: 4px;
-  overflow: auto;
+  && {
+    font-size: 14px !important;
+    /* background-color: red !important;  */
+    color: #abb2bf !important; // Light grey text color for readability
+    font-family: 'Fira Code', 'Monaco', monospace !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    padding: 10px !important; // Increase padding for a more spacious feel
+    border: 1px solid #abb2bf !important; // Subtle border
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1) !important; // Soft box shadow for depth
+    /* width: 100px; */
 
+    .token-line{
+      color: blue !important;
+    }
+    .language-tsx{
+      background: #090942 !important;
+    }
+    .prism-code {
+      color: blue !important;
+    }
+    .token{
+      color: red !important;
+    }
+    .tag{
+      color: red !important;
+    } 
+    .class-name{
+      color: red !important;
+    }
+    .token-line {
+    color: #6272a4 !important; /* For comments */
+  }
+
+  .prism-code {
+    color: #f8f8f2 !important; /* Default text color */
+  }
+
+  .token {
+    color: #8be9fd !important; /* Base token color */
+  }
+
+  .tag {
+    color: #ff79c6 !important; /* HTML/XML tags or components */
+  }
+
+  .class-name {
+    color: #50fa7b !important; /* Class names in the code */
+  }
+  }
 `;
+
 
 const StyledLiveError = styled(LiveError)`
   color: red;
@@ -81,7 +126,7 @@ const LiveCodeComponent: React.FC<LiveCodeComponentProps> = ({ jsCode = '', tsCo
   };
 
   return (
-    <div style={{ position: 'relative', marginBottom: '20px' }}>
+    <div style={{ position: 'relative', marginBottom: '20px' , width:'700px', border:'1px solid red'}}>
      
       <LiveProvider code={activeCode} scope={scope} noInline={noInline}>
         <StyledLivePreview style={{ padding: '10px',  marginTop: '10px', borderRadius: '4px' }} />

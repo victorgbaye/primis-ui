@@ -7,7 +7,7 @@
   "module": "dist/primis-ui.es.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist" 
+    "dist"
   ],
   "scripts": {
     "dev": "vite",
@@ -22,6 +22,8 @@
     "styled-components": "^6.1.8"
   },
   "dependencies": {
+    "@uiw/react-codemirror": "^4.21.24",
+    "codemirror": "^6.0.1",
     "prism-react-renderer": "^2.3.1",
     "react-live": "^4.1.6",
     "react-router-dom": "^6.22.2"

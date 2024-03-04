@@ -21,9 +21,18 @@ import { inputDataEntry, general } from '../utils/SidebarData';
 const StyledNavLink = styled(NavLink)`
   color: #000; // Default link color
   text-decoration: none;
-
+  &:hover{
+          /* background: grey; */
+          width: 100%;
+        }
   &.active {
-    color: #3498db; // Active link color
+    color: #5D55F7; // Active link color
+    /* border: 1px solid #EDF1FF;
+    width: 100%;
+    padding: var(--SM, 16px);
+    border-radius: var(--XS, 8px);
+    background: #EDF1FF; */
+
   }
 `;
 
@@ -41,7 +50,7 @@ const Sidebar: React.FC = () => {
           <CategoryName>{categoryName}</CategoryName>
           <LinkList>
             {items.map(({ text, path }) => (
-              <LinkItem key={path}>
+              <LinkItem key={path} to={path}>
                 <StyledNavLink
                   to={path}
                   className={({ isActive }) => (isActive ? 'active' : '')}
