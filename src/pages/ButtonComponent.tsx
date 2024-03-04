@@ -1,4 +1,4 @@
-import { Button } from "../components/Button"
+import  Button  from "../components/Button"
 import Sidebar from "../documentation/components/Sidebar"
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import ButtonExample from "../documentation/examples/ButtonExample";

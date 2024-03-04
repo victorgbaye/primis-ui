@@ -1,4 +1,4 @@
-import { Button } from "../../components/Button";
+import  Button  from "../../components/Button";
 import LiveCodeComponent from "../components/LiveCodeExample";
 
 
@@ -18,7 +18,6 @@ const tsExample = `function Example(): JSX.Element {
 const ButtonExample = () => {
   return (
     <div>
-      <h1>Live Code Example</h1>
       <LiveCodeComponent jsCode={jsExample} tsCode={tsExample} scope={{Button}}/>
     </div>
   );

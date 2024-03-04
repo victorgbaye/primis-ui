@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Modal from "../components/Modal"
-import { Button } from "../components/Button"
+import  Button  from "../components/Button"
 
 const ModalComponent = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)

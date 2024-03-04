@@ -1,29 +1,28 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Adjustments for module resolution */
-    "moduleResolution": "node",
+    "target": "es5", // Target lower ECMAScript versions for broader compatibility
+    "lib": ["es6", "dom", "es2017"], // Include ES6 and DOM lib for broader compatibility
+    "module": "ESNext", // Keep ESNext for the most efficient code
+    "outDir": "./dist", // Specify output directory for compiled files
+    "declaration": true, // Generate corresponding '.d.ts' file(s)
+    "declarationMap": true, // Create sourcemaps for '.d.ts' files
+    "sourceMap": true, // Enable sourcemap generation for debugging
+    "rootDir": "./src", // Specify the root directory of input files
+    "moduleResolution": "node", // Use Node.js module resolution
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Enabling ES modules interop */
-    "esModuleInterop": true,  // Allow default imports from modules with no default export
-    "allowSyntheticDefaultImports": true,  // Allow default imports from modules with no default export
-
-    /* Linting */
+    "noEmit": false, // Set to false to emit compiled JS files
+    "jsx": "react-jsx", // Support JSX in .tsx files
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "useDefineForClassFields": true
   },
   "include": ["src"],
+  "exclude": ["node_modules", "dist"], // Exclude directories from the compilation
   "references": [
     {
       "path": "./tsconfig.node.json"

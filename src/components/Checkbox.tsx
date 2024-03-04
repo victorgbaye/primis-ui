@@ -4,7 +4,7 @@ type Checkbpxprop = {
     onChange?: () => void;
     value:string
  }
-export const Checkbox = (props: Checkbpxprop) => {
+const Checkbox = (props: Checkbpxprop) => {
     const handleInputClick = (e: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
         e.stopPropagation();
       };
@@ -15,3 +15,4 @@ export const Checkbox = (props: Checkbpxprop) => {
       </CheckboxWrapper>
     );
   };
+  export default Checkbox

@@ -1,8 +1,12 @@
-import { Input } from '../components/Input'
+import  Input  from '../components/Input'
+import Sidebar from '../documentation/components/Sidebar'
 
 const InputComponent = () => {
   return (
-    <div><Input placeholder='e.g Jon Doe' label='first name'/></div>
+    <div>
+      <Sidebar/>
+      <Input placeholder='e.g Jon Doe' label='first name'/>
+    </div>
   )
 }
 

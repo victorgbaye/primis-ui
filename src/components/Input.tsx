@@ -4,7 +4,7 @@ type InputProps = {
     label?: string,
     placeholder?:string
 }
-export const Input = (props: InputProps) => {
+ const Input = (props: InputProps) => {
     return (
         <div className='input-label'>  
         <Label>{props.label}</Label>
@@ -14,3 +14,4 @@ export const Input = (props: InputProps) => {
     </div>
   )
 }
+export default Input
