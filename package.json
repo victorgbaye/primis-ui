@@ -1,12 +1,14 @@
 {
   "name": "primis-ui",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "dist/primis-ui.umd.js",
   "module": "dist/primis-ui.es.js",
   "types": "dist/index.d.ts",
-  "files":["src/**/*"],
+  "files": [
+    "src/**/*"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
