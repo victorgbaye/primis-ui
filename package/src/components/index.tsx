@@ -1,4 +1,4 @@
-export {  default as Button } from './Button';
+export {  Button } from './Button';
 export {  Checkbox } from './Checkbox';
 export { Input } from './Input';
 export {  default as Modal } from './Modal';

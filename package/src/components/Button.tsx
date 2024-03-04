@@ -8,7 +8,7 @@ interface StyledButtonProps {
   variant?: ButtonVariant; // Now optional
 }
 
- const Button = styled.button<StyledButtonProps>`
+export const Button = styled.button<StyledButtonProps>`
     /* Style */
     background: var(--Base-2-Primary, #5D55F7);
     color: ${props => (props.variant === 'text' || props.variant === 'outline') ? 'var(--Base-2-Primary, #5D55F7)' : 'var(--Base-2-Highlight, #EDF1FF)'};
@@ -42,5 +42,3 @@ export const ExtendedButton = styled(Button)<ExtendedButtonProps>`
     border: ${(props) => props.border};
     color: ${(props) => props.color};
 `
-
-export default Button

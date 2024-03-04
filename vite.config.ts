@@ -11,7 +11,7 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: 'src/main.tsx', // Entry file for your library
+      entry: 'src/components/index.tsx', // Entry file for your library
       name: 'PrimisUI', // Global variable for UMD module, adjust accordingly
       fileName: (format) => `primis-ui.${format}.js` // Output file naming
     },

@@ -1,6 +1,6 @@
 import x from '../assets/images/x.svg'
 import { Wrapper } from '../assets/wrappers/Modal.styles';
-import  Button  from './Button';
+import { Button } from './Button';
 
 interface ModalTypes{
     prompt?:string;
