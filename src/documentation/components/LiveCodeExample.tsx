@@ -75,7 +75,7 @@ const StyledLiveEditor = styled(LiveEditor)`
   }
 
   .class-name {
-    color: #50fa7b !important; /* Class names in the code */
+    color: #50fa7b !important; 
   }
   }
 `;
