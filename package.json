@@ -1,6 +1,6 @@
 {
   "name": "primis-ui",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": false,
   "type": "module",
   "main": "dist/primis-ui.umd.js",
@@ -13,8 +13,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext .ts,.tsx --fix",
-    "preview": "vite preview",
-    "prepare": "npm run build"
+    "preview": "vite preview"
   },
   "peerDependencies": {
     "react": "^18.2.0",
