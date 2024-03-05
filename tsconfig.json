@@ -3,7 +3,7 @@
     "target": "es5", // Target lower ECMAScript versions for broader compatibility
     "lib": ["es6", "dom", "es2017"], // Include ES6 and DOM lib for broader compatibility
     "module": "ESNext", // Keep ESNext for the most efficient code
-    "outDir": "./dist", // Specify output directory for compiled files
+    // "outDir": "./dist", 
     "declaration": true, // Generate corresponding '.d.ts' file(s)
     "declarationMap": true, // Create sourcemaps for '.d.ts' files
     "sourceMap": true, // Enable sourcemap generation for debugging
