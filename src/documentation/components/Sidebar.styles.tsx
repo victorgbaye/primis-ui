@@ -24,20 +24,16 @@ export const CategoryName = styled.h3`
 export const LinkList = styled.ul`
   list-style: none;
   padding: 0;
-  /* border: 1px solid red; */
 `;
 
 export const LinkItem = styled(NavLink)`
-   color: #000; // Default link color
+   color: #000; 
   text-decoration: none;
   margin-bottom: 5px;
-  /* border: 1px solid pink; */
   display: flex;
         align-items: center;
-        /* gap: var(--SM); */
         align-self: stretch;
         height: 44px;
-        /* border: 1px solid red; */
         border-radius: 8px;
         padding: var(--SM, 16px);
 
@@ -46,7 +42,7 @@ export const LinkItem = styled(NavLink)`
           width: 100%;
         }
         &.active {
-    color: #5D55F7; // Active link color
+    color: #5D55F7; 
     border: 1px solid #EDF1FF;
     width: 100%;
     padding: var(--SM, 6px);

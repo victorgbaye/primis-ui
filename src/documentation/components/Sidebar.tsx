@@ -22,17 +22,10 @@ const StyledNavLink = styled(NavLink)`
   color: #000; // Default link color
   text-decoration: none;
   &:hover{
-          /* background: grey; */
           width: 100%;
         }
   &.active {
-    color: #5D55F7; // Active link color
-    /* border: 1px solid #EDF1FF;
-    width: 100%;
-    padding: var(--SM, 16px);
-    border-radius: var(--XS, 8px);
-    background: #EDF1FF; */
-
+    color: #5D55F7; 
   }
 `;
 
