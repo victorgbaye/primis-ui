@@ -22,7 +22,6 @@
     "useDefineForClassFields": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist"], // Exclude directories from the compilation
   "references": [
     {
       "path": "./tsconfig.node.json"
