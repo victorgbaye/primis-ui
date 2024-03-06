@@ -20,6 +20,7 @@ interface StyledButtonProps {
     align-items: center;
     gap: var(--SM, 8px);
     cursor: pointer;
+    padding: 8px 16px;
     background-color: ${props => props.variant === 'outline' || props.variant === 'text' ? 'transparent' : 'var(--Base-2-Primary, #5D55F7)'};
 
        /* Disabled state styles */
