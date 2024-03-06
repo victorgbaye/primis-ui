@@ -46,8 +46,8 @@ const Sidebar: React.FC = () => {
               <LinkItem key={path} to={path}>
                 <StyledNavLink
                   to={path}
-                  className={({ isActive }) => (isActive ? 'active' : '')}
-                >
+                  className={({ isActive }: { isActive: boolean }) => (isActive ? 'active' : '')}
+                  >
                   {text}
                 </StyledNavLink>
               </LinkItem>
