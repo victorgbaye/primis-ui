@@ -1,9 +1,15 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
   plugins: [
     react(),
+    dts({
+      // This is where you can add options for the plugin. For most use cases, the default options are sufficient.
+      // For example, to specify the output directory for the type definitions, you can use:
+      outDir: 'dist/types'
+    }),
   ],
   build: {
     lib: {
