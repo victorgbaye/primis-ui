@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "outDir": "./dist",
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
@@ -10,9 +12,7 @@
     "isolatedModules": true,
     "noEmit": false, // Ensure this is set to false to allow file emission
     "jsx": "react-jsx",
-    "declaration": true, // Add this to generate .d.ts files
     "declarationMap": true, // Generates sourcemaps for .d.ts files
-    "outDir": "./dist", // Specify the output directory for all generated files
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

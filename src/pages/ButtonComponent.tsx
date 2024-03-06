@@ -8,7 +8,6 @@ const ButtonComponent = () => {
     <div style={{display:'flex', gap:'18px', marginTop:'20px'}}>
 
         <ButtonExample/>
-
     </div>
     </>
   )
