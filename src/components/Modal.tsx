@@ -6,6 +6,13 @@ import  Button  from './Button';
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
+    *,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
     position: fixed;
     top: 0;
     left: 0;
@@ -111,8 +118,8 @@ const Modal: React.FC<ModalTypes> = ({prompt, title, closeModal, buttonLabel, on
              (
                
                <>
-               <Button onClick={onConfirm}>{buttonLabel}</Button>
-               <Button onClick={closeModal} color='#222' variant='text'>Cancel</Button>
+               <Button onClick={onConfirm} style={{padding:'8px 16px'}}>{buttonLabel}</Button>
+               <Button onClick={closeModal} color='#222' variant='text' style={{padding:'8px 16px'}}>Cancel</Button>
                </>
              )
              
